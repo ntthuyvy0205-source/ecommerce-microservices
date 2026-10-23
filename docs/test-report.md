@@ -1,6 +1,6 @@
 ﻿# Test report
 
-Generated: 2026-10-23 17:11:39
+Generated: 2026-10-24 01:57:43
 
 Produced by `generate-test-report.ps1`: it runs the six smoke-test suites against the running system and maps their checks to the 25 test cases of the specification.
 
