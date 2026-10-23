@@ -94,3 +94,14 @@ shared/proto/       hợp đồng gRPC (chỉ chứa file .proto)
 docs/               tài liệu
 docker-compose.yml  hệ thống đầy đủ (chỉ mở cổng 3000)
 ```
+
+## Tắt và bật hệ thống
+
+```powershell
+docker compose stop      # tắt sạch (các CSDL được đóng đúng cách)
+docker compose start     # bật lại
+```
+
+Không nên "Pause" rồi thoát Docker Desktop khi hệ thống đang chạy: tiến trình bị giết đột ngột, các CSDL phải tự phục hồi lúc bật lại.
+Không chạy `docker compose down -v`, `docker volume prune` hay `docker system prune --volumes`: chúng xóa dữ liệu.
+Toàn bộ container có `restart: unless-stopped`, nên sau khi Docker Desktop khởi động lại hệ thống tự lên.
