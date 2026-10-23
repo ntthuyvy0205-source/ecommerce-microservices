@@ -1,6 +1,6 @@
 ﻿# Test report
 
-Generated: 2026-10-24 01:57:43
+Generated: 2026-10-24 02:05:00
 
 Produced by `generate-test-report.ps1`: it runs the six smoke-test suites against the running system and maps their checks to the 25 test cases of the specification.
 
@@ -20,7 +20,7 @@ Produced by `generate-test-report.ps1`: it runs the six smoke-test suites agains
 | TC-CUS-05 | Customer & Membership | Truy vấn Customer không có token | gateway: 1 check(s) | PASS |
 | TC-PRO-01 | Product | Lấy danh sách Product | gateway: 1 check(s); product: 1 check(s) | PASS |
 | TC-PRO-02 | Product | Lấy Product tồn tại | gateway: 1 check(s); product: 1 check(s) | PASS |
-| TC-PRO-03 | Product | Lấy Product không tồn tại | gateway: 2 check(s); product: 1 check(s) | PASS |
+| TC-PRO-03 | Product | Lấy Product không tồn tại | gateway: 1 check(s); product: 1 check(s) | PASS |
 | TC-PRO-04 | Product | Tạo Product | gateway: 1 check(s); product: 1 check(s) | PASS |
 | TC-PRO-05 | Product | Cập nhật tồn kho | gateway: 1 check(s); product: 1 check(s) | PASS |
 | TC-ORD-01 | Order | Tạo Order hợp lệ | gateway: 1 check(s); order: 1 check(s) | PASS |

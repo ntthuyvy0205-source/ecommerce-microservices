@@ -127,7 +127,7 @@ const is = (r, status) => r.status === status;
   r = await api('GET', '/api/products/abc', { token: t1 });
   check('non-numeric pid -> 400', is(r, 400));
   r = await api('GET', '/api/products/99999999', { token: t1 });
-  check('unknown product -> 404', is(r, 404));
+  check('order for unknown product -> 404', is(r, 404));
 
   r = await api('PUT', `/api/products/${P}`, { token: ta, body: { price: 1600 } });
   check('partial update (price only) -> 200', is(r, 200) && r.json.pid === P);
